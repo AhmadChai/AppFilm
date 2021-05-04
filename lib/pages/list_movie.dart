@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-import 'base_config.dart';
+import '../base_config.dart';
 import 'detailmovie.dart';
-import 'model/movieslist.dart';
+import '../model/movieslist.dart';
 
 
-class HomePage extends StatefulWidget {
+class DetailMovie extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _DetailMovieState createState() => _DetailMovieState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _DetailMovieState extends State<DetailMovie> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

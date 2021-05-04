@@ -1,6 +1,6 @@
-import 'package:bottom_navigation/detailmovie.dart';
+import 'package:bottom_navigation/pages/detailmovie.dart';
 import 'package:bottom_navigation/home.dart';
-import 'package:bottom_navigation/list_movie.dart';
+import 'package:bottom_navigation/pages/list_movie.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());

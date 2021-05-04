@@ -1,8 +1,7 @@
 
-import 'package:bottom_navigation/list_movie.dart';
-import 'package:bottom_navigation/pages/Video.dart';
-import 'package:bottom_navigation/pages/mymovie.dart';
-import 'package:bottom_navigation/pages/mhome.dart';
+import 'package:bottom_navigation/pages/list_movie.dart';
+import 'package:bottom_navigation/pages/user.dart';
+import 'package:bottom_navigation/pages/home_naviagation.dart';
 import 'package:bottom_navigation/pages/reminders.dart';
 import 'package:flutter/material.dart';
 
@@ -23,11 +22,11 @@ class _MyHomeState extends State<MyHome> {
   void initState() {
     super.initState();
     _listPages
-    ..add(Mhome())
-    ..add(HomePage())
-    ..add(MyMovie())
+    ..add(HomeNaviagate())
+    ..add(DetailMovie())
+    ..add(User())
     ..add(Reminders());
-    _currentPage = Video();
+    _currentPage = HomeNaviagate();
   }
 
   void _changePage(int selectedIndex) {
@@ -63,11 +62,11 @@ class _MyHomeState extends State<MyHome> {
             ),
           BottomNavigationBarItem(
             icon: Icon(Icons.videocam),
-            title: Text('H.Video'),
+            title: Text('ListMovie'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.movie),
-            title: Text('movie'),
+            icon: Icon(Icons.verified_user),
+            title: Text('User'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.access_alarms),

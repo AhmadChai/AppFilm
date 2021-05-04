@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'base_config.dart';
-import 'model/movieslist.dart';
+import '../base_config.dart';
+import '../model/movieslist.dart';
 
 class DetailMoviePage extends StatefulWidget {
   final Movie movie;
